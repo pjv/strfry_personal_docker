@@ -1,5 +1,5 @@
 # strfry Based Personal Nostr Relay Via Docker
-This repo is basic configuration for running a personal strfry nostr relay supporting NIP-20 and NIP-65 via Docker.
+This repo is basic configuration for running a personal strfry nostr relay (adding support for NIP-20 and NIP-65) via Docker.
 
 ## Requirements
 You will need a plain VPS with Docker installed and a basic understanding of how to run services via docker compose.
@@ -46,4 +46,4 @@ Mike Dilger, author of the nostr client [gossip](https://github.com/mikedilger/g
 
 ## TODO
 * Include fail2ban
-* Manage tag spam if/when strfry allows
+* Manage tag spam if / when strfry allows
