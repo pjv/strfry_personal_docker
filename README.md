@@ -23,7 +23,7 @@ You will also need a domain name and the ability to create a DNS A (and optional
 * `Caddyfile`
 4. Near the top of `write-policy.py` configure your whitelist by adding one or more hex pubkeys that are allowed to post events to your relay.
 5. Starting at around line 30 in the file `my-strfry.conf` find the section called "info" and fill in the NIP-11 info for your relay. 
-6. On the second line of `Caddyfile` replace the placeholder "your.relay.domain.name" with your relay's actual domain name.
+6. On the second line of `Caddyfile` replace the placeholder `your.relay.domain.name` with your relay's actual domain name.
 7. Build your strfry image by executing `docker compose build`. This will take several minutes on a small VPS.
 8. Start your strfry relay by executing `docker compose up -d && docker compose logs -f`. If all goes well, you should see some logging from `strfry-caddy` about setting up an SSL certificate with Let's Encrypt for your relay's domain name. Once that's done your relay should be online and ready for your events.
 
@@ -42,7 +42,7 @@ This write policy plugin is written in python and requires one small change to t
 ## Motivation
 I think that in order for nostr to be what it can be, there needs to be a LOT of small relays all over everywhere as opposed to a short list of giant, "popular" relays that everyone uses which then must inevitably become centralized points of all manner of vulnerabilities that nostr is explicitly about avoiding.
 
-Mike Dilger, author of the nostr client [gossip](https://github.com/mikedilger/gossip) as well as [NIP-65](https://github.com/nostr-protocol/nips/blob/master/65.md) wrote [The Gossip Model](https://mikedilger.com/gossip-model/) -- a description of how gossip manages relays in a way that can support this vision of having many smaller relays all over the place and still let people find the content they want to follow via nostr. In that document there is a section called *Personal Relays*. The _write policy_ in this repo is a first stab at implementing personal relays in that fashion.
+Mike Dilger, author of the nostr client [gossip](https://github.com/mikedilger/gossip) as well as [NIP-65](https://github.com/nostr-protocol/nips/blob/master/65.md) wrote [The Gossip Model](https://mikedilger.com/gossip-model/) -- a description of how gossip manages relays in a way that can support this vision of having many smaller relays all over the place and still let people find the content they want to follow via nostr. In that document there is a section called **Personal Relays**. The _write policy_ in this repo is a first stab at implementing personal relays in that fashion.
 
 ## TODO
 * Include fail2ban
