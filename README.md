@@ -15,12 +15,12 @@ You will also need a domain name and the ability to create a DNS A (and optional
 2. From the command line on your VPS, clone strfry
 `git clone https://github.com/hoytech/strfry.git`
 3. Copy the following files and folders from this repo into your strfry clone (none of these filenames should collide with anything in the strfry repo):
-* my-strfry-db (empty for now)
-* my-Dockerfile
-* docker-compose.yaml
-* my-strfry.conf
-* write-policy.py
-* Caddyfile
+* `my-strfry-db` (empty for now)
+* `my-Dockerfile`
+* `docker-compose.yaml`
+* `my-strfry.conf`
+* `write-policy.py`
+* `Caddyfile`
 4. Near the top of `write-policy.py` configure your whitelist by adding one or more hex pubkeys that are allowed to post events to your relay.
 5. Starting at around line 30 in the file `my-strfry.conf` find the section called "info" and fill in the NIP-11 info for your relay. 
 6. On the second line of `Caddyfile` replace the placeholder "your.relay.domain.name" with your relay's actual domain name.
