@@ -26,7 +26,7 @@ You will also need a domain name and the ability to create a DNS A (and optional
 4. Near the top of `write-policy.py` configure your whitelist by adding one or more hex pubkeys that are allowed to post events to your relay.
 5. Starting at around line 30 in the file `my-strfry.conf` find the section called "info" and fill in the NIP-11 info for your relay. 
 6. On the second line of `Caddyfile` replace the placeholder `your.relay.domain.name` with your relay's actual domain name.
-7. Build your strfry image by executing `docker compose build`. This will take several minutes on a small VPS.
+7. Build your strfry image by executing `docker compose build`. Make coffee; this will take a while on a small VPS.
 8. Start your strfry relay by executing `docker compose up -d && docker compose logs -f`. If all goes well, you should see some logging from `strfry-caddy` about setting up an SSL certificate with Let's Encrypt for your relay's domain name. Once that's done your relay should be online and ready for your events.
 
 ## Caddy
