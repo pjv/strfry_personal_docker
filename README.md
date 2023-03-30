@@ -1,5 +1,5 @@
 # strfry Based Personal Nostr Relay Via Docker
-This repo is basic configuration for running a personal strfry nostr relay (adding support for [NIP-20](https://github.com/nostr-protocol/nips/blob/master/20.md)] and [NIP-65](https://github.com/nostr-protocol/nips/blob/master/65.md)) via Docker.
+This repo is basic configuration for running a personal strfry nostr relay (adding support for [NIP-20](https://github.com/nostr-protocol/nips/blob/master/20.md) and [NIP-65](https://github.com/nostr-protocol/nips/blob/master/65.md)) via Docker.
 
 This configuration is supplied in good faith as-is. This is not newbie-friendly; you need to know how to run public services on a Linux virtual private server (VPS) to be able to use this. Don't use this if you don't know how to use this (or if you do, please don't ask for help here on how to set up a linux server).
 
