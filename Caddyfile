@@ -1,0 +1,6 @@
+# CONFIGURE YOUR RELAY DOMAIN NAME BELOW:
+your.relay.domain.name {
+  reverse_proxy / strfry:7777 {
+    header_up x-real-ip {remote_host}
+  }
+}
