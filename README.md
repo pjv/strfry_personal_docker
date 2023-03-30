@@ -78,3 +78,6 @@ Mike Dilger, author of the nostr client [gossip](https://github.com/mikedilger/g
 
 ## TODO
 * Manage tag spam if / when strfry allows
+
+## Tips
+BTC address: bc1q85wh2q3w5wjgfzd9pkq3dk3ua2f35ka9eg3s5z
