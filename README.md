@@ -59,7 +59,7 @@ I have supplied an alternate docker-compose file called `docker-compose-build.ya
 
 If you run your server for a while and it becomes known in the nostr network, it will eventually start getting hammered by spammers trying to write to it. Your write policy plugin will not let them actually post, but the traffic can get overwhelming. 
 
-So I've also included `strfry-fail2ban-filter.conf` and `strfry-fail2ban-jail.conf` that you can drop into `/etc/fail2ban/filter.d` and `/etc/fail2ban/jail.d` respectively to ban the IP addresses of abusers. The jail I've included bans for 2 hours at a time any host that the write policy plug blocks 10 or more times in a 2 minute window - you may want to adjust the parameters.
+So I've also included `strfry-fail2ban-filter.conf` and `strfry-fail2ban-jail.conf` that you can drop into `/etc/fail2ban/filter.d` and `/etc/fail2ban/jail.d` respectively to ban the IP addresses of abusers. The jail I've included bans for 2 hours at a time any host that the write policy plugin blocks 10 or more times in a 2 minute window - you may want to adjust the parameters.
 
 If you are familiar with docker, you may have noticed that the included compose file routes the container logs to the host's syslog. That is what lets fail2ban (running on the host) see the logs and block repeat offenders. It's also a good practice anyway with containers that log a lot to send their output somewhere that gets regularly rotated like a linux syslog does.
 
