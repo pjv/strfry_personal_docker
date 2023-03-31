@@ -48,7 +48,7 @@ The primary `docker-compose.yml` file supplied here pulls a strfry docker image 
 1. I added python to the docker image created in the original Dockerfile supplied with strfry (which lets the included write policy plugin run)
 2. I created the github workflow that generates the docker image for the `docker-compose.yml` file mentioned above
 
-You may prefer to build your own docker image instead of pulling mine. If so, you will need at least a 4GB VPS for the build process (I tried it on a 2GB VPS and the build did not complete - even with another 2GB of swap).
+You may prefer to build your own docker image instead of pulling mine. If so, you will need a bigger VPS for the build. I was successful on an 8GB server but maybe 4GB will work? (I tried it on a 2GB VPS and the build did not complete - even with another 2GB of swap).
 
 I have supplied an alternate docker-compose file called `docker-compose-build.yaml` which you can substitute in place of `docker-compose.yaml` in the instructions above along with two additional changes: 
 
